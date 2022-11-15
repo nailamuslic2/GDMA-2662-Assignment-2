@@ -25,7 +25,6 @@
 *,
 *:after,
 *:before {
-    font-family: 'Roboto Slab', serif;
     -o-box-sizing: border-box;
     -moz-box-sizing: border-box;
     -ms-box-sizing: border-box;
@@ -34,7 +33,7 @@
 }
 
 html {
-    font-size: 1rem;
+    font: 1rem  'Roboto Slab', serif;
 }
 
 @media only screen and (min-width: 768px) {
@@ -53,6 +52,7 @@ html {
     4.0 - ELEMENTS
 -------------------------------------------------------------- */
 
+
 @media only screen and (min-width: 768px) {
 
 }
@@ -63,7 +63,56 @@ html {
 
 /* ----- TYPOGRAPHY ----- */
 
+nav ul {
+    list-style-type: none;
+}
 
+nav li {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    display: inline-block;
+    margin-left: 2em;
+    margin-top: 1em;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: #003833;
+    background-color: #FFD8DB;
+    border-radius: 18px;
+    padding: 5px 8px;
+}
+
+h1, 
+h2 {
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+}
+
+h1, 
+h2, 
+h3,
+nav a {
+    color: #00B0A3;
+}
+
+h1 {
+    text-align: center;
+    font-size: 6rem;
+    margin-bottom: 0em;
+    line-height: 6rem;
+} 
+
+header p {
+    margin-top: 0em;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 2rem;
+}
 
 /*--------------------------------------------------------------
     5.0 - OBJECTS
@@ -79,6 +128,11 @@ html {
 
 [class*='col-'] {
     padding: 10px;
+}
+
+[class*='col-'] [class*='col-'] {
+    margin-left: -10px;
+    margin-right: -10px;
 }
 
 .img-responsive {
@@ -148,6 +202,10 @@ html {
     .wrapper {
         width: 85%;
         margin: 0 auto;
+    }
+
+    footer .row {
+        flex-direction: row-reverse;
     }
 
     .col-md-1 {
@@ -261,15 +319,16 @@ html {
     6.0 - COMPONENTS
 -------------------------------------------------------------- */
 
-/*#bg-hand {
-    background: url(../img/hand.jpg) no-repeat center;
-    -o-background-size: cover;
-    -moz-background-size: cover;
-    -ms-background-size: cover;
-    -webkit-background-size: cover;
-    background-size: cover;
+header > div:last-child {
+    background: #FFD8DB url(../img/bg-balloon.jpg) no-repeat 15%;
+    -o-background-size: contain;
+    -moz-background-size: contain;
+    -ms-background-size: contain;
+    -webkit-background-size: contain;
+    background-size: contain;
     background-clip: content-box;
-}*/
+}
+
 
 
 /*--------------------------------------------------------------
@@ -280,6 +339,10 @@ html {
 
 .col-center {
     justify-content: center;
+}
+
+header nav {
+    text-align: right;
 }
 
 /* ----- SCREEN READER ----- */

@@ -5,10 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="css/normalize.css">
 <link rel="stylesheet" href="css/main.css">
-<script src="https://kit.fontawesome.com/b45665928e.js" crossorigin="anonymous"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&family=Pacifico&family=Roboto+Slab:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/7dd4e11fa5.js" crossorigin="anonymous"></script>
 
 
 
@@ -17,130 +17,172 @@
 
 <body>
     <header>
-        <div class="wrapper">
-            <div class="col-sm-4">
-                <img src="img/Ding_logo.jpg" alt="ding">
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#systems">Systems</a></li>
-                    <li><a href="#layout">Layout</a></li>
-                    <li><a href="#testing">Testing</a></li>
-                    <li><a href="#benefits">Benefits</a></li>
-                </ul>
-            </nav>
-        </div>
-        <div class="wrapper">
-            <div>
-                <h1>atomic design</h1>
-            </div>
-            <div>
-                <p>We're not designing pages, we're designing systems of components.</p>
+        <div>
+            <div class="wrapper row">
+                <div class="col-sm-4 col-lg-2">
+                    <img src="img/Ding_logo.jpg" alt="ding" data-rjs="2" class="img-responsive">
+                </div>
+                <nav class="col-sm-12 col-lg-10">
+                    <ul>
+                        <li><a href="#systems">Systems</a></li>
+                        <li><a href="#layout">Layout</a></li>
+                        <li><a href="#testing">Testing</a></li>
+                        <li><a href="#benefits">Benefits</a></li>
+                    </ul>
+                </nav>
             </div>
         </div>
-   </header>
+        <div> 
+            <div class="wrapper">
+                <h1>atomic design</h1> 
+                <div class="row col-center">
+                    <div class="col-lg-4">
+                        <p>We're not designing pages, we're designing systems of components.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
 
    <main class="wrapper">
         <section id="systems">
-            <header>
-                <h2>design systems</h2>
-                <p>A lot has been said about creating design systems, and much of it focuses on establishing foundations for color, typography, grids, texture and the like. This type of thinking is certainly important, but I'm slightly less interested in these aspects of design because ultimately they are and will always be subjective. Atomic design is methodology for creating design systems. There are five distinct levels in atomic design: Atoms, Molecules, Organisms, Templates, Pages.</p>
-            </header>
+            <div class="row col-center">
+                <header class="col-sm-12 col-lg-8">
+                    <h2>design systems</h2>
+                    <p>A lot has been said about creating design systems, and much of it focuses on establishing foundations for color, typography, grids, texture and the like. This type of thinking is certainly important, but I'm slightly less interested in these aspects of design because ultimately they are and will always be subjective. Atomic design is methodology for creating design systems. There are five distinct levels in atomic design: Atoms, Molecules, Organisms, Templates, Pages.</p>
+                </header>
+            </div>
             <div class="row">
-                <section>
-                    <header>
+                <section class="row col-sm-12 col-lg-4">
+                    <div class="col-sm-1 col-lg-12">
                         <span class="fa-solid fa-atom"></span>
-                    </header>
-                    <h3>atoms</h3>
-                    <p><b>Atoms are the basic building blocks of matter.</b> Applied to web interfaces, atoms are our HTML tags, such as a form label, an input or a button. Atoms can also include color palettes, fonts and animations. They're fairly abstract and often not terribly useful on their own. However, they're good as a reference in the context of a pattern library as you can see all your global styles laid out at a glance.</p>
+                    </div>
+                    <div class="col-sm-11 col-lg-12">
+                        <header>
+                            <h3>atoms</h3>
+                        </header>
+                        <p><b>Atoms are the basic building blocks of matter.</b> Applied to web interfaces, atoms are our HTML tags, such as a form label, an input or a button. Atoms can also include color palettes, fonts and animations. They're fairly abstract and often not terribly useful on their own. However, they're good as a reference in the context of a pattern library as you can see all your global styles laid out at a glance.</p>
+                    </div>
                 </section>
 
-                <section>
-                    <header>
+                <section class="row col-sm-12 col-lg-4">
+                    <div class="col-sm-1 col-lg-12">
                         <span class="fa-solid fa-dna"></span>
-                    </header>
-                    <h3>molecules</h3>
-                    <p>Things start getting more interesting and tangible when we start combining atoms together. <b>Molecules are groups of atoms bonded together and are the smallest fundamental units of a compound.</b> These molecules take on their own properties and serve as the backbone of our design systems.</p>
+                    </div>
+                    <div class="col-sm-11 col-lg-12">
+                        <header>
+                            <h3>molecules</h3>
+                        </header>
+                        <p>Things start getting more interesting and tangible when we start combining atoms together. <b>Molecules are groups of atoms bonded together and are the smallest fundamental units of a compound.</b> These molecules take on their own properties and serve as the backbone of our design systems.</p>
+                    </div>
                 </section>
 
-                <section>
-                    <header>
+                <section class="row col-sm-12 col-lg-4">
+                    <div class="col-sm-1 col-lg-12">
                         <span class="fa-solid fa-bacteria"></span>
-                    </header>
-                    <h3>organisms</h3>
-                    <p>Molecules give us some building blocks to work with, and we can now combine them together to form organisms. <b>Organisms are groups of molecules joined together to form a relatively complex, distinct section of an interface.</b> Organisms can consist of similar and/or different molecule types. Building up from molecules to organisms encourages creating standalone, portable, reusable components.</p>
+                    </div>
+                    <div class="col-sm-11 col-lg-12">
+                        <header>
+                            <h3>organisms</h3>
+                        </header>
+                        <p>Molecules give us some building blocks to work with, and we can now combine them together to form organisms. <b>Organisms are groups of molecules joined together to form a relatively complex, distinct section of an interface.</b> Organisms can consist of similar and/or different molecule types. Building up from molecules to organisms encourages creating standalone, portable, reusable components.</p>
+                    </div>
                 </section>
             </div>
-            <div>
-                <h2>why atomic design</h2>
+        </section>
+
+        <div class="row" id="layout">
+            <section class="col-sm-12 col-lg-4"> <!--bg color-->
+                <header>
+                    <h2>why atomic design</h2>
+                </header>
                 <p>Atomic design provides a clear methodology for crafting design systems. Atomic design gives us the ability to traverse from abstract to concrete. Because of this, we can create systems that promote consistency and scalability while simultaneously showing things in their final context. And by assembling rather than deconstructing, we're crafting a system right out of the gate instead of cherry picking patterns after the fact.</p>
-            </div>
-        </section>
+            </section>
 
-        <section id="layout">
-            <header>
-                <h3>layout</h3>
+            <section class="col-sm-12 col-lg-8">
+                <header>
+                    <h2>layout</h2>
+                </header>
                 <p>At the template stage, we break our chemistry analogy to get into language that makes more sense to our clients and our final output. Templates consist mostly of groups of organisms stitched together to form pages. It's here where we start to see the design coming together and start seeing things like layout in action.</p>
-            </header>
-            <div>
-                <h3>templates</h3>
-                <p><b>Templates are very concrete and provide context to all these relatively abstract molecules and organisms.</b> Templates are also where clients start seeing the final design in place. In my experience working with this methodology, templates begin their life as HTML wireframes, but over time increase fidelity to ultimately become the final deliverable.</p>
-            </div>
-            <div>
-                <h3>pages</h3>
-                <p><b>Pages are specific instances of templates.</b> Here, placeholder content is replaced with real representative content to give an accurate depiction of what a user will ultimately see. Pages are the highest level of fidelity and because they're the most tangible, it's typically where most people in the process spend most of their time and what most  reviews revolve around.</p>
-            </div>
-        </section>
+                <div class="row">
+                    <section class="col-sm-12 col-lg-6">
+                        <header>
+                            <h3>templates</h3>
+                        </header>
+                        <p><b>Templates are very concrete and provide context to all these relatively abstract molecules and organisms.</b> Templates are also where clients start seeing the final design in place. In my experience working with this methodology, templates begin their life as HTML wireframes, but over time increase fidelity to ultimately become the final deliverable.</p>
+                    </section>
+                    <section class="col-sm-12 col-lg-6">
+                        <header>
+                            <h3>pages</h3>
+                        </header>
+                        <p><b>Pages are specific instances of templates.</b> Here, placeholder content is replaced with real representative content to give an accurate depiction of what a user will ultimately see. Pages are the highest level of fidelity and because they're the most tangible, it's typically where most people in the process spend most of their time and what most  reviews revolve around.</p>
+                    </section>
+                </div>
+            </section>
+        </div>
 
-        <section id="testing">
-            <header>
-                <h2>testing the system</h2>
-            </header>
-            <p>The page stage is essential as it's where we test the effectiveness of the design system. Viewing everything in context allows us to loop back to modify our molecules, organisms, and templates to better address the real context of the design.</p>
+        <section id="testing" class="row">
+            <div class="col-sm-12 col-lg-5 img-responsive"></div>
+            <div class="col-sm-12 col-lg-7">
+                <header>
+                    <h2>testing the system</h2>
+                </header>
+                <p>The page stage is essential as it's where we test the effectiveness of the design system. Viewing everything in context allows us to loop back to modify our molecules, organisms, and templates to better address the real context of the design.</p>
 
-            <p>Pages are also the place to test variations in templates. For example, you might want to articulate what a headline containing 40 characters looks like, but also demonstrate what 340 characters looks like. What does it look like when a user has one item in their shopping cart versus 10 items with a discount code applied? Again, these specific instances influence how we loop back through and construct our system.</p>
+                <p>Pages are also the place to test variations in templates. For example, you might want to articulate what a headline containing 40 characters looks like, but also demonstrate what 340 characters looks like. What does it look like when a user has one item in their shopping cart versus 10 items with a discount code applied? Again, these specific instances influence how we loop back through and construct our system.</p>
+            </div>
         </section>
 
         <section id="benefits">
-            <header>
+            <header class="col-sm-12 col-lg-8">
                 <h2>benefits</h2>
                 <p>Atomic design can require considerably more thought and planning, but it's often worth the extra effort. So what are the main benefits of it?</p>
             </header>
             <div class="row">
-                <section>
-                    <header>
-                        <span></span>
-                    </header>
-                    <h3>design</h3>
-                    <p><b>Building a component based system</b> &mdash; When we are breaking down our components into basic atoms, it becomes easier to see what atoms can be combined or mixed and matched to form other molecules or organisms. It helps us to navigate between atomic parts and the whole of our UIs.</p>
-                    <p><b></b>Style guide creation becomes simple</b> &mdash; Applying the atomic design principles from the get go, which means that all the atoms and molecules are created before the site is built, you can incorporate all your atoms and molecules into your style guide. This keeps your design consistent across platforms.</p>
+                <section class="row col-sm-12 col-lg-6">
+                    <div class="col-sm-12 col-lg-1">
+                        <span class="fa-solid fa-pen-ruler"></span>
+                    </div>
+                    <div class="col-sm-12 col-lg-11">
+                        <header>
+                            <h3>design</h3>
+                        </header>
+                        <p><b>Building a component based system</b> &mdash; When we are breaking down our components into basic atoms, it becomes easier to see what atoms can be combined or mixed and matched to form other molecules or organisms. It helps us to navigate between atomic parts and the whole of our UIs.</p>
+                        <p><b></b>Style guide creation becomes simple</b> &mdash; Applying the atomic design principles from the get go, which means that all the atoms and molecules are created before the site is built, you can incorporate all your atoms and molecules into your style guide. This keeps your design consistent across platforms.</p>
+                    </div>
                 </section>
                 
-                <section>
-                    <header>
-                        <span></span>
-                    </header>
-                    <h3>code</h3>
-                    <p><b>Easy to read code that is more consistent</b> &mdash; The code of 'atomically' designed websites is typically much easier to read than one created a more traditional way. Consistency is given when you use predefined atoms in order to create the site layout. It makes it easy to see which components are being used for different parts of the site. This reduces the tendency of duplicate code on the site.</p>
-                    <p><b>Faster Prototyping and updating</b> &mdash; By having a defined list of atoms before the creation process begins eventually means that you can mock up pages quickly and easily. You simply pick and combine the required elements for the site. If an update is necessary, only one atom, molecule or organism is changed at a time. This simplifies any updates to a component that is carried out across to all other instances.</p>
+                <section class="row col-sm-12 col-lg-6">
+                    <div class="col-sm-12 col-lg-1">
+                        <span class="fa-solid fa-code"></span>
+                    </div>
+                    <div class="col-sm-12 col-lg-11">
+                        <header>
+                            <h3>code</h3>
+                        </header>
+                        <p><b>Easy to read code that is more consistent</b> &mdash; The code of 'atomically' designed websites is typically much easier to read than one created a more traditional way. Consistency is given when you use predefined atoms in order to create the site layout. It makes it easy to see which components are being used for different parts of the site. This reduces the tendency of duplicate code on the site.</p>
+                        <p><b>Faster Prototyping and updating</b> &mdash; By having a defined list of atoms before the creation process begins eventually means that you can mock up pages quickly and easily. You simply pick and combine the required elements for the site. If an update is necessary, only one atom, molecule or organism is changed at a time. This simplifies any updates to a component that is carried out across to all other instances.</p>
+                    </div>
                 </section>
             </div>
         </section>
    </main>
 
    <footer>
-        <nav>
-            <ul>
-                <li><a href="#system">System</a></li>
-                <li><a href="#layout">Layout</a></li>
-                <li><a href="#testing">Testing</a></li>
-                <li><a href="#benefits">Benefits</a></li>
-            </ul>
-        </nav>
-        <div>
-            <img src="img/Ding_logo.jpg" alt="ding">
-            <p>Atomic Design</p>
-            <p>By Brad Frost</p>
+        <div class="wrapper row">
+            <nav class="col-sm-12 col-lg-10">
+                <ul>
+                    <li><a href="#system">System</a></li>
+                    <li><a href="#layout">Layout</a></li>
+                    <li><a href="#testing">Testing</a></li>
+                    <li><a href="#benefits">Benefits</a></li>
+                </ul>
+            </nav>
+            <div class="col-sm-12 col-lg-2">
+                <img src="img/Ding_logo.jpg" alt="ding" class="img-responsive" data-rjs="2">
+                <p>Atomic Design</p>
+                <p>By Brad Frost</p>
+            </div>
         </div>
    </footer>
 
